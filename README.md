@@ -7,6 +7,7 @@ This tool allows users to input financial news article URLs, process the content
 ![](rockybot.jpg)
 
 ## Features
+
 - Load and analyze financial news articles through URLs
 - Extract article content using LangChain's UnstructuredURLLoader
 - Split and preprocess text for efficient retrieval
@@ -18,52 +19,87 @@ This tool allows users to input financial news article URLs, process the content
 - Save FAISS vector database locally for future retrieval
 
 
+## Tech Stack
+
+  - Python
+  - Streamlit
+  - LangChain
+  - OpenAI API
+  - FAISS
+  - dotenv
+
+
 ## Installation
 
-1.Clone this repository to your local machine using:
+### 1. Clone the repository
 
 ```bash
-  git clone https://github.com/codebasics/langchain.git
+git clone https://github.com/Desilva93/Equity-News-Research-Tool.git
 ```
-2.Navigate to the project directory:
+
+### 2. Navigate to the project directory
 
 ```bash
-  cd 2_news_research_tool_project
+cd Equity-News-Research-Tool
 ```
-3. Install the required dependencies using pip:
+
+### 3. Install dependencies
 
 ```bash
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
-4.Set up your OpenAI API key by creating a .env file in the project root and adding your API
+
+### 4. Set up OpenAI API Key
+
+Create a `.env` file in the project root directory and add:
 
 ```bash
-  OPENAI_API_KEY=your_api_key_here
+OPENAI_API_KEY=your_api_key_here
 ```
-## Usage/Examples
 
-1. Run the Streamlit app by executing:
+---
+
+## Usage
+
+Run the Streamlit application:
+
 ```bash
 streamlit run main.py
-
 ```
 
-2.The web app will open in your browser.
+After launching:
 
-- On the sidebar, you can input URLs directly.
+1. The Streamlit app opens in your browser.
+2. Enter financial news article URLs in the sidebar.
+3. Click **Process URLs** to load and process articles.
+4. The system performs:
+   - Text splitting
+   - Embedding generation
+   - FAISS vector indexing
+5. Ask questions related to the news articles.
+6. Receive AI-generated answers with supporting source URLs.
 
-- Initiate the data loading and processing by clicking "Process URLs."
 
-- Observe the system as it performs text splitting, generates embedding vectors, and efficiently indexes them using FAISS.
+---
 
-- The embeddings will be stored and indexed using FAISS, enhancing retrieval speed.
+## Example Use Case
 
-- The FAISS index will be saved in a local file path in pickle format for future use.
-- One can now ask a question and get the answer based on those news articles
-- In video tutorial, we used following news articles
-  - https://www.moneycontrol.com/news/business/tata-motors-mahindra-gain-certificates-for-production-linked-payouts-11281691.html
-  - https://www.moneycontrol.com/news/business/tata-motors-launches-punch-icng-price-starts-at-rs-7-1-lakh-11098751.html
-  - https://www.moneycontrol.com/news/business/stocks/buy-tata-motors-target-of-rs-743-kr-choksey-11080811.html
+Input news articles related to:
+
+- Stock market trends
+- Company earnings
+- Financial reports
+- Market analysis
+- Economic news
+
+Example questions:
+
+- What is the market sentiment around Tata Motors?
+- What are the key financial highlights mentioned?
+- Which companies are expected to grow according to these reports?
+
+---
+
 
 ## Project Structure
 
