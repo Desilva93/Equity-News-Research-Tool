@@ -1,16 +1,21 @@
 
 # Equity-News-Research-Tool 
 
-It is a user-friendly news research tool designed for effortless information retrieval. Users can input article URLs and ask questions to receive relevant insights from the stock market and financial domain.
+An AI-powered Equity News Research Tool built using LangChain, OpenAI, FAISS, and Streamlit for intelligent financial news analysis and question answering.
+This tool allows users to input financial news article URLs, process the content using Large Language Models (LLMs), and ask natural language questions to receive relevant answers along with source references.
 
 ![](rockybot.jpg)
 
 ## Features
-
-- Load URLs or upload text files containing URLs to fetch article content.
-- Process article content through LangChain's UnstructuredURL Loader
-- Construct an embedding vector using OpenAI's embeddings and leverage FAISS, a powerful similarity search library, to enable swift and effective retrieval of relevant information
-- Interact with the LLM's (Chatgpt) by inputting queries and receiving answers along with source URLs.
+- Load and analyze financial news articles through URLs
+- Extract article content using LangChain's UnstructuredURLLoader
+- Split and preprocess text for efficient retrieval
+- Generate embeddings using OpenAI Embeddings
+- Store and index embeddings using FAISS for fast similarity search
+- Ask questions in natural language and receive AI-generated answers
+- Display relevant source URLs along with responses
+- User-friendly Streamlit interface for easy interaction
+- Save FAISS vector database locally for future retrieval
 
 
 ## Installation
