@@ -4,7 +4,7 @@
 An AI-powered Equity News Research Tool built using LangChain, OpenAI, FAISS, and Streamlit for intelligent financial news analysis and question answering.
 This tool allows users to input financial news article URLs, process the content using Large Language Models (LLMs), and ask natural language questions to receive relevant answers along with source references.
 
-![](rockybot.jpg)
+![](Demo.jpg)
 
 ## Features
 
