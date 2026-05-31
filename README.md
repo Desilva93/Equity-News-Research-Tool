@@ -104,14 +104,14 @@ Example questions:
 ## Project Structure
 
 ```bash
-News_Research/
+Equity-News-Research-Tool/
 │
-├── Notebook/              # Jupyter notebooks for experimentation
-├── vector_index/          # FAISS vector database storage
+├── vector_index/          # Stores FAISS vector database files
 ├── .env                   # OpenAI API key configuration
+├── .gitignore             # Git ignored files configuration
+├── Demo.jpg               # Application demo screenshot
+├── LICENSE                # MIT License
+├── README.md              # Project documentation
+├── Requirements.txt       # Required Python dependencies
 ├── main.py                # Main Streamlit application
-├── requirements.txt       # Project dependencies
-├── URLs                   # File containing article URLs
 ```
-
----
