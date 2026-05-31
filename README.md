@@ -103,7 +103,15 @@ Example questions:
 
 ## Project Structure
 
-- main.py: The main Streamlit application script.
-- requirements.txt: A list of required Python packages for the project.
-- faiss_store_openai.pkl: A pickle file to store the FAISS index.
-- .env: Configuration file for storing your OpenAI API key.
+```bash
+News_Research/
+│
+├── Notebook/              # Jupyter notebooks for experimentation
+├── vector_index/          # FAISS vector database storage
+├── .env                   # OpenAI API key configuration
+├── main.py                # Main Streamlit application
+├── requirements.txt       # Project dependencies
+├── URLs                   # File containing article URLs
+```
+
+---
